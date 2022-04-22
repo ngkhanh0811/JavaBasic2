@@ -1,4 +1,4 @@
-package example;/*Welcome to my show !
+package src.example;/*Welcome to my show !
 
 @author: NgKhanh
 Date: 4/21/2022
@@ -14,7 +14,6 @@ import java.util.Scanner;
 public class TestStudent {
     public static void main(String[] args) {
         int check;
-        char x;
         Scanner a = new Scanner(System.in);
         Date d1 = new Date();
         List<Student> students = new ArrayList<>();
@@ -24,11 +23,11 @@ public class TestStudent {
         students.add(new Student(4, "Luong Viet Hoang", d1, "Ha Long", "hoangluong123@gmail.com", 1));
         students.add(new Student(5, "Ta Van Minh", d1, "Thanh Hoa", "minhtv123@gmail.com", 1));
 
-//        students.forEach(student -> {
-//            if (student.getRollNo() == 1) {
-//                System.out.println(student);
-//            }
-//        });
+/*      students.forEach(student -> {
+           if (student.getRollNo() == 1) {
+               System.out.println(student);
+           }
+        });*/
         do {
             System.out.println("\nEnter student rollNo :");
             check = a.nextInt();

@@ -1,4 +1,4 @@
-package collection;/*Welcome to my show !
+package src.collection;/*Welcome to my show !
 
 @author: NgKhanh
 Date: 4/21/2022

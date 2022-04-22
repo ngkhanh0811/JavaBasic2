@@ -1,4 +1,4 @@
-package example;/*Welcome to my show !
+package src.example;/*Welcome to my show !
 
 @author: NgKhanh
 Date: 4/21/2022
