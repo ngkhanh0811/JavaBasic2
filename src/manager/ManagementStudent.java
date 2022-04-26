@@ -33,57 +33,51 @@ public class ManagementStudent {
     public void addStudent() {
         System.out.println("Enter student rollNo: ");
         rollNo = a.nextInt();
-        System.out.println("Enter student full name: ");
-        name = b.next();
-        System.out.println("Enter student date of birth: ");
-        db = c.next();
-        System.out.println("Enter student address: ");
-        address = d.next();
-        System.out.println("Enter student email: ");
-        email = e.next();
-        System.out.println("Enter student status: ");
-        status = f.nextInt();
-        System.out.println("Successful!");
+        if (students.stream().allMatch(student -> student.getRollNo() != rollNo)) {
+            System.out.println("Enter student full name: ");
+            name = b.next();
+            System.out.println("Enter student date of birth: ");
+            db = c.next();
+            System.out.println("Enter student address: ");
+            address = d.next();
+            System.out.println("Enter student email: ");
+            email = e.next();
+            System.out.println("Enter student status: ");
+            status = f.nextInt();
+            Student student = new Student(rollNo, name, address, email, db, status);
+            students.add(student);
+            System.out.println("Successful!");
+        }
+        else {
+            System.out.println("Object is already exists!");
+        }
+    }
+    public void addStudent(Student student) {
+        students.add(student);
     }
 
     public void removeStudent() {
-        students.sort(Comparator.comparingInt(Student::getRollNo));
-        System.out.println("Enter your student rollNo: ");
+        System.out.println("Remove student: ");
+        System.out.println("Enter rollNo of student you wanna remove: ");
         rollNo = a.nextInt();
-        switch (rollNo) {
-            case 1:
-                students.remove(0);
-                System.out.println("Successful!");
-                break;
-            case 2:
-                students.remove(1);
-                System.out.println("Successful!");
-                break;
-            case 3:
-                students.remove(2);
-                System.out.println("Successful!");
-                break;
-            case 4:
-                students.remove(3);
-                System.out.println("Successful!");
-                break;
-            case 5:
-                students.remove(4);
-                System.out.println("Successful!");
-                break;
-            case 6:
-                students.remove(5);
-                System.out.println("Successful!");
-                break;
-            default:
-                System.out.println("Cannot found!");
-                break;
+        if (students.stream().anyMatch(student -> student.getRollNo() == rollNo)) {
+
+            for (Student student : students
+            ) {
+                if (student.getRollNo() == rollNo) {
+                    students.remove(student);
+                    System.out.println("Successful!");
+                    break;
+                }
+            }
+        } else {
+            System.out.println("Cannot found!");
         }
     }
 
     public void listStudent() {
-        for (Student stu : students) {
-            System.out.println("RollNo(" + stu.getRollNo() + "): " + stu.getFullName());
+        for (Student student : students) {
+            System.out.println("RollNo(" + student.getRollNo() + "): " + student.getFullName());
         }
     }
 
@@ -124,64 +118,54 @@ public class ManagementStudent {
             }
         }
         while (select <= 5 && select > 0);
-        {
-
-        }
-    }
-
-    public void addStudent(Student student) {
-        students.add(student);
     }
 
     public void changeStudent() {
-        int change;
-        Scanner g = new Scanner(System.in);
+        int change = 0;
+        int num = 0;
         Scanner in = new Scanner(System.in);
             do {
-                System.out.println("What do you want to change student information?");
-                System.out.println("1. Email");
-                System.out.println("2. Address");
-                System.out.println("3. Date of birth");
-                System.out.println("4. Status");
-                System.out.println("5. Exit");
-                System.out.println("Enter your choice:");
-                change = g.nextInt();
-                switch (change) {
-                    case 1:
-                        System.out.println("Enter your new email: ");
-                        String em = in.next();
-                        for (Student student: students){
-                            student.setEmail(em);
+                System.out.println("Enter your rollNo of student you wanna change information (press 0 to exit): ");
+                num = in.nextInt();
+                for (Student student: students
+                     ) {
+                    if (student.getRollNo() == num){
+                        System.out.println("What do you want to change student information?");
+                        System.out.println("1. Email");
+                        System.out.println("2. Address");
+                        System.out.println("3. Date of birth");
+                        System.out.println("4. Status");
+                        System.out.println("5. Exit");
+                        System.out.println("Enter your choice:");
+                        change = in.nextInt();
+                        switch (change) {
+                            case 1:
+                                System.out.println("Enter your new email: ");
+                                String em = in.next();
+                                    student.setEmail(em);
+                                break;
+                            case 2:
+                                System.out.println("Enter your new address: ");
+                                String ad = in.next();
+                                    student.setAddress(ad);
+                                break;
+                            case 3:
+                                System.out.println("Enter your new date of birth: ");
+                                String db = in.next();
+                                    student.setDob(db);
+                                break;
+                            case 4:
+                                System.out.println("Enter your new status: ");
+                                int st = in.nextInt();
+                                    student.setStatus(st);
+                                break;
+                            default:
+                                System.out.println("Successfull!");
+                                break;
                         }
-                        break;
-                    case 2:
-                        System.out.println("Enter your new address: ");
-                        String ad = in.next();
-                        for (Student student: students){
-                            student.setAddress(ad);
-                        }
-                        break;
-                    case 3:
-                        System.out.println("Enter your new date of birth: ");
-                        String db = in.next();
-                        for (Student student: students){
-                            student.setDob(db);
-                        }
-                        break;
-                    case 4:
-                        System.out.println("Enter your new status: ");
-                        int st = in.nextInt();
-                        for (Student student: students){
-                            student.setStatus(st);
-                        }
-                        break;
-                    default:
-                        System.out.println("Successfull!");
-                        break;
+                    }
                 }
             }
-            while(change<=4&&change>0);{
-
-            }
+            while(change<=4 && change>0 && num!=0);
         }
     }

@@ -2,13 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baabe907-068a-4270-897d-f1858590f326" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/manager/ManagementStudent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/manager/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/manager/TestManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coffee/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coffee/ManagerCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coffee/ManagerProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coffee/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coffee/TestMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/contactlist/Contact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/contactlist/ManagementContact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/contactlist/TestContact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaBasic2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaBasic2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaBasic2/src/example/TestStudent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaBasic2/src/example/TestStudent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/example/TestStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/example/TestStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaBasic2/src/manager/ManagementStudent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaBasic2/src/manager/ManagementStudent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaBasic2/src/manager/TestManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaBasic2/src/manager/TestManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/manager/ManagementStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manager/ManagementStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/manager/TestManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manager/TestManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +45,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="28A4StFMHKPekj0N19iESjqhl4u" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -55,7 +66,33 @@
       <recent name="src.manager" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestManager">
+  <component name="RunManager" selected="Application.TestMenu">
+    <configuration name="TestCoffee" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.coffee.TestCoffee" />
+      <module name="JavaBasic2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.coffee.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestContact" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.contactlist.TestContact" />
+      <module name="JavaBasic2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.contactlist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.manager.TestManager" />
       <module name="JavaBasic2" />
@@ -69,12 +106,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestStudent (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.example.TestStudent" />
+    <configuration name="TestMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.coffee.TestMenu" />
       <module name="JavaBasic2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.example.*" />
+          <option name="PATTERN" value="src.coffee.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -82,12 +119,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestStudent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="example.TestStudent" />
+    <configuration name="menu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.menu" />
       <module name="JavaBasic2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="example.*" />
+          <option name="PATTERN" value="src.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,9 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestMenu" />
+        <item itemvalue="Application.menu" />
         <item itemvalue="Application.TestManager" />
-        <item itemvalue="Application.TestStudent (1)" />
-        <item itemvalue="Application.TestStudent" />
+        <item itemvalue="Application.TestCoffee" />
+        <item itemvalue="Application.TestContact" />
       </list>
     </recent_temporary>
   </component>
@@ -114,7 +153,9 @@
       <workItem from="1650646061840" duration="32000" />
       <workItem from="1650646180101" duration="216000" />
       <workItem from="1650646526388" duration="266000" />
-      <workItem from="1650692846554" duration="12235000" />
+      <workItem from="1650692846554" duration="13293000" />
+      <workItem from="1650723154308" duration="7579000" />
+      <workItem from="1650932038141" duration="15574000" />
     </task>
     <servers />
   </component>

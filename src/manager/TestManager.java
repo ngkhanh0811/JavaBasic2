@@ -27,16 +27,15 @@ public class TestManager {
         managementStudent.addStudent(student4);
         managementStudent.addStudent(student5);
 
-        System.out.println("Menu: ");
-        System.out.println("1. View student list");
-        System.out.println("2. Remove student information");
-        System.out.println("3. Add student information");
-        System.out.println("4. Change student information");
-        System.out.println("5. Sort students by name A-Z");
-        System.out.println("6. Looking for student");
-        System.out.println("7. Exit");
-
         do {
+            System.out.println("Menu: ");
+            System.out.println("1. View student list");
+            System.out.println("2. Remove student information");
+            System.out.println("3. Add student information");
+            System.out.println("4. Change student information");
+            System.out.println("5. Sort students by name A-Z");
+            System.out.println("6. Looking for student");
+            System.out.println("7. Exit");
             System.out.println("\nPlease select function: ");
             a = i.nextInt();
             switch (a){
@@ -56,8 +55,6 @@ public class TestManager {
                     break;
             }
         }
-        while (a<=6 && a>0);{
-
-        }
+        while (a<=6 && a>0);
     }
 }
