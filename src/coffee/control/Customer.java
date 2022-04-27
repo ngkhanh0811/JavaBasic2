@@ -1,13 +1,10 @@
-package src.coffee;/*Welcome to my show !
+package src.coffee.control;/*Welcome to my show !
 
 @author: NgKhanh
 Date: 4/26/2022
 Time: 8:57 AM
 
 ProjectName: JavaBasic2*/
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class Customer {
     int number;
