@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baabe907-068a-4270-897d-f1858590f326" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sql/SelectWithName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sql/TestNortWind.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sql/SelectOrderBy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sql/SelectProduct.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,9 +59,9 @@
       <recent name="src.manager" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SelectWithName">
-    <configuration name="JdbcSelectTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.sql.JdbcSelectTest" />
+  <component name="RunManager" selected="Application.SelectByName">
+    <configuration name="SelectByName" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.sql.SelectByName" />
       <module name="JavaBasic2" />
       <extension name="coverage">
         <pattern>
@@ -73,12 +73,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.contact.Main" />
+    <configuration name="SelectOrderBy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.sql.SelectOrderBy" />
       <module name="JavaBasic2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.contact.*" />
+          <option name="PATTERN" value="src.sql.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -86,12 +86,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.coffee.menu.Main" />
+    <configuration name="SelectProduct" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.sql.SelectProduct" />
       <module name="JavaBasic2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.coffee.menu.*" />
+          <option name="PATTERN" value="src.sql.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SelectByName" />
+        <item itemvalue="Application.SelectOrderBy" />
+        <item itemvalue="Application.SelectProduct" />
         <item itemvalue="Application.SelectWithName" />
         <item itemvalue="Application.TestNortWind" />
-        <item itemvalue="Application.JdbcSelectTest" />
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -151,7 +151,7 @@
       <workItem from="1650932038141" duration="15574000" />
       <workItem from="1650982156490" duration="423000" />
       <workItem from="1651064615452" duration="10043000" />
-      <workItem from="1651106182362" duration="8469000" />
+      <workItem from="1651106182362" duration="9085000" />
     </task>
     <servers />
   </component>
