@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baabe907-068a-4270-897d-f1858590f326" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sql/JdbcSelectTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sql/SelectWithName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sql/TestNortWind.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaBasic2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaBasic2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaBasic2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaBasic2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaBasic2/JavaBasic2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaBasic2/JavaBasic2.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +59,7 @@
       <recent name="src.manager" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JdbcSelectTest">
+  <component name="RunManager" selected="Application.SelectWithName">
     <configuration name="JdbcSelectTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.sql.JdbcSelectTest" />
       <module name="JavaBasic2" />
@@ -101,12 +99,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.coffee.control.TestMenu" />
+    <configuration name="SelectWithName" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.sql.SelectWithName" />
       <module name="JavaBasic2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.coffee.control.*" />
+          <option name="PATTERN" value="src.sql.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,12 +112,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="menu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.menu" />
+    <configuration name="TestNortWind" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.sql.TestNortWind" />
       <module name="JavaBasic2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.*" />
+          <option name="PATTERN" value="src.sql.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SelectWithName" />
+        <item itemvalue="Application.TestNortWind" />
         <item itemvalue="Application.JdbcSelectTest" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.TestMenu" />
-        <item itemvalue="Application.menu" />
       </list>
     </recent_temporary>
   </component>
@@ -153,7 +151,7 @@
       <workItem from="1650932038141" duration="15574000" />
       <workItem from="1650982156490" duration="423000" />
       <workItem from="1651064615452" duration="10043000" />
-      <workItem from="1651106182362" duration="7473000" />
+      <workItem from="1651106182362" duration="8469000" />
     </task>
     <servers />
   </component>
