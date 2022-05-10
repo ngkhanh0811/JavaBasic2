@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class SelectWithID {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.println("Enter Bood ID: ");
+        System.out.println("Enter Book ID: ");
         int a = in.nextInt();
         try (
                 Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/bookstore", "root", "");

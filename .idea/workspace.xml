@@ -2,17 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baabe907-068a-4270-897d-f1858590f326" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/database/bookstore.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/ebookshop.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sql/MenuSwitch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sql/SelectInEbookshop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sql/SelectOrderWithCusID.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sql/SelectScanner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sql/SelectStatusWithOrderID.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sql/SelectWithAuthor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sql/SelectWithID.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/giftshop/Gift.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/giftshop/GiftController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/giftshop/GiftView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sql/ExUpdateDeleteInsert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sql/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sql/UpdateSQLTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaBasic2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaBasic2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaBasic2/src/sql/SelectWithID.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaBasic2/src/sql/SelectWithID.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sql/SelectWithID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sql/SelectWithID.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +66,20 @@
       <recent name="src.manager" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SelectStatusWithOrderID">
+  <component name="RunManager" selected="Application.ExUpdateDeleteInsert">
+    <configuration name="ExUpdateDeleteInsert" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.sql.ExUpdateDeleteInsert" />
+      <module name="JavaBasic2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.sql.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SelectOrderWithCusID" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.sql.SelectOrderWithCusID" />
       <module name="JavaBasic2" />
@@ -94,8 +106,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectWithAuthor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.sql.SelectWithAuthor" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.sql.Test" />
       <module name="JavaBasic2" />
       <extension name="coverage">
         <pattern>
@@ -107,8 +119,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectWithID" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.sql.SelectWithID" />
+    <configuration name="UpdateSQLTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.sql.UpdateSQLTest" />
       <module name="JavaBasic2" />
       <extension name="coverage">
         <pattern>
@@ -119,19 +131,14 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="ebookshop.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
-      <script-file value="$PROJECT_DIR$/src/database/ebookshop.sql" />
-      <script-mode>FILE</script-mode>
-      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ExUpdateDeleteInsert" />
+        <item itemvalue="Application.UpdateSQLTest" />
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.SelectStatusWithOrderID" />
         <item itemvalue="Application.SelectOrderWithCusID" />
-        <item itemvalue="Application.SelectWithID" />
-        <item itemvalue="Application.SelectWithAuthor" />
-        <item itemvalue="Database Script.ebookshop.sql" />
       </list>
     </recent_temporary>
   </component>
@@ -156,6 +163,10 @@
       <workItem from="1651595284584" duration="1423000" />
       <workItem from="1651672560117" duration="3465000" />
       <workItem from="1651711417416" duration="8763000" />
+      <workItem from="1651931142329" duration="4054000" />
+      <workItem from="1651941412790" duration="657000" />
+      <workItem from="1651944416717" duration="596000" />
+      <workItem from="1652188841703" duration="5152000" />
     </task>
     <servers />
   </component>
