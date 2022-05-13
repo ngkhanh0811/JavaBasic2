@@ -14,12 +14,12 @@ public class UpdateSQLTest {
                 Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/bookstore", "root", "");
                 Statement stmt = conn.createStatement();
                 ){
-            String strUpdate = "update book " + " set title = 'Onepiece' where bookID = 620";
+            String strUpdate = "update book " + " set title = 'Onepiece' where bookID = 621";
             System.out.println("The SQL statement is: "+ strUpdate + "\n");
 
             stmt.executeUpdate(strUpdate);
 
-            String strSelect = "select title from book where bookID = 620";
+            String strSelect = "select title from book where bookID = 621";
             System.out.println("The SQL statement is: "+ strSelect + "\n");
 
             ResultSet rs = stmt.executeQuery(strSelect);
