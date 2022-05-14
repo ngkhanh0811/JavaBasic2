@@ -39,7 +39,7 @@ public class ExUpdateDeleteInsert {
             int countDeleted = stmt.executeUpdate(sqlDelete);
             System.out.println(countDeleted + " records deleted.\n");
 
-            String sqlInsert = "insert into book values " + "(80011, 'JavaCore', 13, 'Dang Kim Thi', 102, 'Sign', 1),"+ " (8012,'Java Advanced', 14, 'James Gosling', 96, 'Sign', 1)";
+            String sqlInsert = "insert into book values " + "(8011, 'JavaCore', 13, 'Dang Kim Thi', 102, 'Sign', 1),"+ " (8012,'Java Advanced', 14, 'James Gosling', 96, 'Sign', 1)";
             int countInserted = stmt.executeUpdate(sqlInsert);
             System.out.println(countInserted + " records inserted.\n");
 
