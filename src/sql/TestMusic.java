@@ -17,11 +17,28 @@ public class TestMusic {
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/bookstore", "root", "");
             Statement stmt = conn.createStatement();
         ) {
+            ResultSet rset = stmt.executeQuery("select * from music");
+            ResultSetMetaData rsetMD = rset.getMetaData();
+            int numcolumn = rsetMD.getColumnCount();
+
+            for(int i = 1; i<= numcolumn; i++){
+                System.out.printf("%-30s", rsetMD.getColumnName(i));
+            }
+            System.out.println();
+            for (int i=1; i<= numcolumn; i++){
+                System.out.printf("%-30s", "(" + rsetMD.getColumnClassName(i)+ ")");
+            }
+            while (rset.next()){
+                for (int i = 1;i<=numcolumn;i++){
+                    System.out.printf("%-30s", rset.getString(i));
+                }
+                System.out.println();
+                System.out.println();
+            }
             System.out.println("Press 1 to insert value");
             System.out.println("Press 2 to update value");
             System.out.println("Press 3 to delete value");
             System.out.println("Press 4 to search by songs author");
-            System.out.println("Press 5 to see all of table");
             System.out.println("Select options: ");
             int select = in.nextInt();
             switch (select) {
@@ -66,25 +83,6 @@ public class TestMusic {
                         rowCount++;
                     }
                     System.out.println("Total of records: "+rowCount);
-                    break;
-                case 5:
-                    ResultSet rset = stmt.executeQuery("select * from music");
-                    ResultSetMetaData rsetMD = rset.getMetaData();
-                    int numcolumn = rsetMD.getColumnCount();
-
-                    for(int i = 1; i<= numcolumn; i++){
-                        System.out.printf("%-30s", rsetMD.getColumnName(i));
-                    }
-                    System.out.println();
-                    for (int i=1; i<= numcolumn; i++){
-                        System.out.printf("%-30s", "(" + rsetMD.getColumnClassName(i)+ ")");
-                    }
-                    while (rset.next()){
-                        for (int i = 1;i<=numcolumn;i++){
-                            System.out.printf("%-30s", rset.getString(i));
-                        }
-                        System.out.println();
-                    }
                     break;
                 default:
                     System.out.println("Undefined!");
