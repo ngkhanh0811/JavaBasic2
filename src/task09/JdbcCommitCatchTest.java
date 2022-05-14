@@ -17,9 +17,9 @@ public class JdbcCommitCatchTest {
             try{
                 conn.setAutoCommit(false);
 
-                stmt.executeUpdate("insert into book values (4003, 'Paul Chan',10, 'MaJong 101', 42, 'novel',1)");
-                stmt.executeUpdate("insert into book values (4004, 'Peter Chan',12, 'MaJong 102', 41, 'novel', 1)");
-                conn.commit();
+//                stmt.executeUpdate("insert into book values (4003, 'Paul Chan',10, 'MaJong 101', 42, 'novel',1)");
+//                stmt.executeUpdate("insert into book values (4004, 'Peter Chan',12, 'MaJong 102', 41, 'novel', 1)");
+//                conn.commit();
 
                 ResultSet rset = stmt.executeQuery("select * from book");
                 ResultSetMetaData rsetMD = rset.getMetaData();

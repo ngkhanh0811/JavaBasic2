@@ -6,6 +6,6 @@ create table Music(
                     year int,
                     PRIMARY KEY (id)
 );
-insert into music values (7,'All I Ask','Adele',2021),
-                         (8,'Shape of you','Edsheeran',2022),
-                         (9,'Happier','Edsheeran',2021)
+insert into music values (1,'All I Ask','Adele',2021),
+                         (2,'Shape of you','Edsheeran',2022),
+                         (3,'Happier','Edsheeran',2021)
