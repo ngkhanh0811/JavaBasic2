@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class TestMusic {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        String name;
+        Scanner scanner = new Scanner(System.in);
         try (
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/bookstore", "root", "");
             Statement stmt = conn.createStatement();
@@ -28,11 +28,11 @@ public class TestMusic {
             for (int i=1; i<= numcolumn; i++){
                 System.out.printf("%-30s", "(" + rsetMD.getColumnClassName(i)+ ")");
             }
+            System.out.println();
             while (rset.next()){
                 for (int i = 1;i<=numcolumn;i++){
                     System.out.printf("%-30s", rset.getString(i));
                 }
-                System.out.println();
                 System.out.println();
             }
             System.out.println("Press 1 to insert value");
@@ -46,9 +46,9 @@ public class TestMusic {
                     System.out.println("Enter song ID: ");
                     int id = in.nextInt();
                     System.out.println("Enter song name: ");
-                    name = in.next();
+                    String name = scanner.nextLine();
                     System.out.println("Enter song author: ");
-                    String author = in.next();
+                    String author = scanner.nextLine();
                     System.out.println("Enter release year: ");
                     int year = in.nextInt();
                     int countInsert = stmt.executeUpdate("insert into music values" + "('" + id + "','" + name + "','" + author + "','" + year + "')");
@@ -57,13 +57,13 @@ public class TestMusic {
                 case 2:
                     System.out.println("Enter column name you wanna update: ");
                     String column = in.next();
-                    System.out.println("Enter old column: ");
+                    System.out.println("Enter location column name: ");
                     String oldColumn = in.next();
-                    System.out.println("Enter old value: ");
-                    String oldValue = in.next();
+                    System.out.println("Enter location value: ");
+                    String oldValue = scanner.nextLine();
                     System.out.println("Enter new value: ");
-                    String value = in.next();
-                    stmt.executeUpdate("update music set '"+ column +"' = '"+ value +"' where '"+oldColumn+"' = '"+oldValue+"'");
+                    String value = scanner.nextLine();
+                    stmt.executeUpdate("update music set "+ column +" = '"+ value +"' where "+oldColumn+" = '"+oldValue+"'");
                     System.out.println("Update sucessful!");
                     break;
                 case 3:

@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baabe907-068a-4270-897d-f1858590f326" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/task09/BatchPreparement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/task09/BatchProcessing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/music.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/music.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaBasic2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaBasic2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaBasic2/src/sql/TestMusic.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaBasic2/src/sql/TestMusic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaBasic2/src/task09/JdbcCommitCatchTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaBasic2/src/task09/JdbcCommitCatchTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sql/TestMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sql/TestMusic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/task09/JdbcCommitCatchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task09/JdbcCommitCatchTest.java" afterDir="false" />
     </list>
@@ -61,8 +65,8 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.TestMusic">
-    <configuration name="AtomicTransaction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.task09.AtomicTransaction" />
+    <configuration name="BatchPreparement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.task09.BatchPreparement" />
       <module name="JavaBasic2" />
       <extension name="coverage">
         <pattern>
@@ -74,12 +78,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExUpdateDeleteInsert" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.sql.ExUpdateDeleteInsert" />
+    <configuration name="BatchProcessing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.task09.BatchProcessing" />
       <module name="JavaBasic2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.sql.*" />
+          <option name="PATTERN" value="src.task09.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,10 +133,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.TestMusic" />
-        <item itemvalue="Application.JdbcCommitCatchTest" />
+        <item itemvalue="Application.BatchPreparement" />
         <item itemvalue="Application.PreparedStatement" />
-        <item itemvalue="Application.AtomicTransaction" />
-        <item itemvalue="Application.ExUpdateDeleteInsert" />
+        <item itemvalue="Application.BatchProcessing" />
+        <item itemvalue="Application.JdbcCommitCatchTest" />
       </list>
     </recent_temporary>
   </component>
@@ -166,7 +170,10 @@
       <workItem from="1652283863963" duration="601000" />
       <workItem from="1652316657806" duration="7511000" />
       <workItem from="1652452932298" duration="2813000" />
-      <workItem from="1652509775360" duration="6446000" />
+      <workItem from="1652509775360" duration="7089000" />
+      <workItem from="1652537710247" duration="589000" />
+      <workItem from="1652539861804" duration="1458000" />
+      <workItem from="1652612624630" duration="3002000" />
     </task>
     <servers />
   </component>
